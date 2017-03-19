@@ -10,11 +10,8 @@ def lcd(size, number)
 
 end
 
-puts "What what number would you like to show?"
-number = gets.chomp
+number = ARGV[0]
 
-puts "And how large would you like it?"
-size = gets.chomp.to_i
+size = ARGV[1].to_i
 
 lcd(size, number)
-p ARGV.first
